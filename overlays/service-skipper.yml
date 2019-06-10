@@ -1,0 +1,10 @@
+- op: remove
+  path: /spec/type
+- op: add
+  path: /metadata/annotations
+  value:
+    spring.cloud.gateway/routes: |
+      predicates:
+      - Host=skipper.k8s.bosh.tokyo
+      filters:
+      - RequestLogging
