@@ -20,7 +20,7 @@ or
 kapp deploy -a scdf -f <(kubectl kustomize overlays)
 ```
 
-![](docs/termtosvg_fzcvycgo.svg)
+[![asciicast](https://asciinema.org/a/zKf5e6VTFkvPrTnBLhkY7uijc.svg)](https://asciinema.org/a/zKf5e6VTFkvPrTnBLhkY7uijc)
 
 ```
 kapp inspect -a scdf -t
