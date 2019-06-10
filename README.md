@@ -20,9 +20,7 @@ or
 kapp deploy -a scdf -f <(kubectl kustomize overlays)
 ```
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/making/spring-cloud-dataflow-kustomize/master/docs/termtosvg_fzcvycgo.svg">
-</p>
+![](docs/termtosvg_fzcvycgo.svg)
 
 ```
 kapp inspect -a scdf -t
