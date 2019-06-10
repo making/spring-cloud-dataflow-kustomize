@@ -1,0 +1,105 @@
+bases:
+- ../base
+patchesJson6902:
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: rabbitmq
+  path: add-namespace.yml
+- target:
+    group: extensions
+    version: v1beta1
+    kind: Deployment
+    name: rabbitmq
+  path: add-namespace.yml
+- target:
+    group: extensions
+    version: v1beta1
+    kind: Deployment
+    name: mysql
+  path: add-namespace.yml
+- target:
+    group: extensions
+    version: v1beta1
+    kind: Deployment
+    name: mysql
+  path: mysql-secret-key-ref.yml
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: mysql
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: Secret
+    name: mysql
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: PersistentVolumeClaim
+    name: mysql
+  path: add-namespace.yml
+- target:
+    group: rbac.authorization.k8s.io
+    version: v1
+    kind: Role
+    name: scdf-role
+  path: add-namespace.yml
+- target:
+    group: rbac.authorization.k8s.io
+    version: v1beta1
+    kind: RoleBinding
+    name: scdf-rb
+  path: add-namespace.yml
+- target:
+    group: rbac.authorization.k8s.io
+    version: v1beta1
+    kind: RoleBinding
+    name: scdf-rb
+  path: rolebinding-scdf-rb.yml
+- target:
+    group: ""
+    version: v1
+    kind: ServiceAccount
+    name: scdf-sa
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: skipper
+  path: add-namespace.yml
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: skipper
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: ConfigMap
+    name: skipper
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: scdf-server
+  path: add-namespace.yml
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: scdf-server
+  path: add-namespace.yml
+- target:
+    group: ""
+    version: v1
+    kind: ConfigMap
+    name: scdf-server
+  path: add-namespace.yml

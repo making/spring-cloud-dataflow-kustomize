@@ -1,0 +1,17 @@
+resources:
+- namespace.yml
+- ./spring-cloud-dataflow/src/kubernetes/rabbitmq/rabbitmq-deployment.yaml
+- ./spring-cloud-dataflow/src/kubernetes/rabbitmq/rabbitmq-svc.yaml
+- ./spring-cloud-dataflow/src/kubernetes/mysql/mysql-deployment.yaml
+- ./spring-cloud-dataflow/src/kubernetes/mysql/mysql-pvc.yaml
+- ./spring-cloud-dataflow/src/kubernetes/mysql/mysql-secrets.yaml
+- ./spring-cloud-dataflow/src/kubernetes/mysql/mysql-svc.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/server-roles.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/server-rolebinding.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/service-account.yaml
+- ./spring-cloud-dataflow/src/kubernetes/skipper/skipper-deployment.yaml
+- ./spring-cloud-dataflow/src/kubernetes/skipper/skipper-svc.yaml
+- ./spring-cloud-dataflow/src/kubernetes/skipper/skipper-config-rabbit.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/server-config.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/server-svc.yaml
+- ./spring-cloud-dataflow/src/kubernetes/server/server-deployment.yaml
