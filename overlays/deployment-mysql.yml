@@ -1,0 +1,13 @@
+- op: add
+  path: /spec/template/spec/initContainers
+  value:
+  - name: remove-lost-found
+    image: busybox
+    command:          
+    - sh
+    - -c
+    - |
+      rm -fr /var/lib/mysql/lost+found
+    volumeMounts:
+    - name: data
+      mountPath: /var/lib/mysql

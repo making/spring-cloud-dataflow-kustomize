@@ -24,7 +24,7 @@ patchesJson6902:
     version: v1beta1
     kind: Deployment
     name: mysql
-  path: mysql-secret-key-ref.yml
+  path: deployment-mysql.yml
 - target:
     group: ""
     version: v1
@@ -74,12 +74,6 @@ patchesJson6902:
     name: skipper
   path: add-namespace.yml
 - target:
-    group: ""
-    version: v1
-    kind: Service
-    name: skipper
-  path: service-skipper.yml
-- target:
     group: apps
     version: v1
     kind: Deployment
@@ -97,12 +91,6 @@ patchesJson6902:
     kind: Service
     name: scdf-server
   path: add-namespace.yml
-- target:
-    group: ""
-    version: v1
-    kind: Service
-    name: scdf-server
-  path: service-scdf-server.yml
 - target:
     group: apps
     version: v1
